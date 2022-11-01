@@ -18,3 +18,49 @@ tags:
   - css
 burn-points: 1  
 ---
+
+
+
+
+              <section class="checkbox_text">
+                <div class="c-checklist__checkbox">
+                  <input type="checkbox" name="validate-html-checkbox" id="validate-html-checkbox"> 
+                  <label for="validate-html-checkbox">
+                    <span class="u-hide-visually">
+                      Task: Validate your HTML.
+                    </span>
+                  </label>
+                </div>
+                <details class="c-checklist" data-checklist-item-id="validate-your-html">
+                  <summary id="validate-your-html" class="c-checklist__summary">
+                    <span class="c-checklist__summary-inner">
+                      <svg class="c-checklist__icon" aria-hidden="true" focusable="false" height="30" width="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <path fill=#B9005F d="M9.07,29.55l-2.15-2.1L19,15,6.92,2.55,9.07.45,23.23,15Z" fill="currentColor">
+                        </path>
+                      </svg>
+                      <span class="c-checklist__title">
+                        Validate your HTML.
+                      </span>
+                    </span>
+                  </summary>
+                  <p class="c-checklist__citation">
+                    <a class="u-text-transform-uppercase c-checklist__link" href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html">
+                      4.1.1 Parsing
+                    </a>
+                  </p>
+                  <p class="u-font-size-body-small c-checklist__description">
+                    <a href="https://validator.w3.org/nu/">
+                      Valid HTML
+                    </a> 
+                    helps to provide a consistent, expected experience across all browsers and assistive technology.
+                  </p>
+                  <p class="c-checklist__share-link">
+                    <a class="u-text-transform-uppercase c-checklist__link" href="#validate-your-html">
+                      Share Link 
+                      <span class="u-hide-visually">
+                        to checklist item: Validate your HTML.
+                      </span>
+                    </a>
+                  </p>
+                </details>
+              </section>

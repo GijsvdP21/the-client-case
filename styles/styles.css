@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 719px) {
     /* stijlregels voor browserschermen < 720px */
 
 body {
@@ -96,7 +96,7 @@ body {
 
 }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
     /* stijlregels voor browserschermen > 720px en < 1024px */
 
 body {
@@ -121,13 +121,15 @@ body {
 @media only screen and (min-width:1024px) {
     /* stijlregels voor browserschermen ≥ 1024px */
 
-body {
-    width: 100%;
+.sluit {
+    display: none;
 }
 
 .vervoerders {
-    width: 90%;
+    width: 100%;
     overflow: hidden;
+    height: 40rem;
+    object-fit: cover;
 }
 
 .logo {
@@ -154,26 +156,14 @@ body {
     font-size: 30px;
 }
 
-/*main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-section {
-    display: flex;
-    justify-content: space-around;
-}
-
 .principes {
     display: flex;
     position: relative;
-    border: 2px solid white;
-    border-radius: 50%;
+    border: 2px solid #B9005F;
     align-items: center;
     justify-content: center;
-    background-color: #B9005F;
-    color: white;
+    background-color: white;
+    color: #B9005F;
     margin: 5% 3% 3% 3%;
     font-size: 30px;
     padding-top: 15px;
@@ -185,12 +175,11 @@ section {
 .second-box {
     display: flex;
     position: relative;
-    border: 2px solid white;
-    border-radius: 50%;
+    border: 2px solid #B9005F;
     align-items: center;
     justify-content: center;
-    background-color: #FFD05F;
-    color: white;
+    background-color: white;
+    color: #B9005F;
     margin: 3% 3% 3% 3%;
     font-size: 25px;
     padding-top: 15px;
@@ -199,10 +188,9 @@ section {
 
 
 .third-box {
-    display: flex;
+    display: none;
     position: relative;
     border: 2px solid white;
-    border-radius: 50%;
     align-items: center;
     justify-content: center;
     background-color: #46BECD;
@@ -212,7 +200,6 @@ section {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-*/
 
 main {
     display: grid;
@@ -223,8 +210,120 @@ main {
 }
 
 .close {
-    display: none;
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
 }
+
+.c-checklist-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox_text {
+    display: flex;
+    flex-direction: row;
+}
+
+.c-checklist-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-checklist__checkbox input[type=checkbox] {
+    position: relative;
+    left: -30px;
+    top: 38%;
+}
+
+button, input {
+    overflow: visible;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+
+.u-hide-visually {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+
+
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.c-checklist {
+    border: solid 1px #B9005F;
+    list-style-image: none;
+    width: 100%;
+}
+
+
+
+
+details {
+    display: block;
+}
+
+.c-checklist>summary {
+    list-style: none;
+}
+
+.c-checklist__summary {
+    padding: 1.5rem;
+}
+
+.c-checklist__summary {
+    cursor: pointer;
+    padding: 1;
+}
+
+summary {
+    display: list-item;
+}
+
+.c-checklist__summary-inner {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.c-checklist__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    transition: fill .2s ease-in-out;
+    color: #B9005F;
+    flex-shrink: 0;
+}
+
+.c-checklist__title {
+    margin-left: 1rem;
+    flex: 1;
+}
+
+
+
+
+
+
 
 .side-nav {
     grid-area: f;
